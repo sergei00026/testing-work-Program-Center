@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"ПРОГРАММНЫЙ ЦЕНТР"
+	})
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<div class="page__container">
+
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title "><span>Дашборд</span></button>
+							<button type="button" class="tabs__title"><span>Мои заказы</span></button>
+							<button type="button" class="tabs__title _tab-active"><span>Мои программы</span></button>
+							<button type="button" class="tabs__title"><span>Учебный центр</span></button>
+							<button type="button" class="tabs__title"><span>Запрос токена</span></button>
+							<button type="button" class="tabs__title"><span>Техподдержка</span></button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<h2 class="title">Дашборд</h2>
+								<div class="sales">
+									<div class="sales__titles sale-title">
+										<div class="sale-title__title">Номер заказа</div>
+										<div class="sale-title__title">Программа</div>
+										<div class="sale-title__title">Действует до</div>
+										<div class="sale-title__title">Скачать</div>
+										<div class="sale-title__title">Руководство</div>
+										<div class="sale-title__title">Статус</div>
+									</div>
+									<div class="sales__order order order__red">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file1"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file1" id="inp-file1">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+										<div class="order__tippy" data-tippy-content="Продлите заказ"></div>
+									</div>
+									<div class="sales__order order">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file2"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file2" id="inp-file2">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									</div>
+									<div class="sales__order order">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file3"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file3" id="inp-file3">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<h2 class="title">Мои заказы</h2>
+								<div class="activation">
+									<div class="activation__box">
+										<h3 class="activation__heading">Доступно к активации: <span>2</span></h3>
+										<p class="activation__desc">Запросите код и активируйте программу</p>
+										<button data-popup=".popup" type="button" class="activation__button">Запросить код</button>
+									</div>
+									<div class="activation__intelligence intelligence">
+										<div class="intelligence__desc">
+											<p class="intelligence__date">Дата активации: <span>2022-09-15 13:54:59</span> </p>
+											<p class="intelligence__name">Наименование компьютера: <span>HOME-PCi</span>
+												<img data-tippy-content="Роман<br>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz<br>Майкрософт Windows 8.1 Профессиональная" src="@img/main/i.svg" alt="Подсказка">
+											</p>
+											<p class="intelligence__comment">Комментарий: <span>Хочу перенести программу</span></p>
+										</div>
+										<div class="intelligence__active">
+											<button type="button" class="intelligence__submit">Деактивировать</button>
+										</div>
+									</div>
+									<div class="activation__intelligence intelligence">
+										<div class="intelligence__desc">
+											<p class="intelligence__date">Дата активации: <span>2022-09-15 13:54:59</span> </p>
+											<p class="intelligence__name">Наименование компьютера: <span>HOME-PCi</span>
+												<img data-tippy-content="Роман<br>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz<br>Майкрософт Windows 8.1 Профессиональная" src="@img/main/i.svg" alt="Подсказка">
+											</p>
+											<p class="intelligence__comment">Комментарий: <span>Хочу перенести программу</span></p>
+										</div>
+										<div class="intelligence__active">
+											<button type="button" class="intelligence__submit">Деактивировать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<h2 class="title">Мои программы</h2>
+								<div class="inp-text">
+									<input type="text" name="inp-text" class="" autocomplete="off" placeholder="Введите название"></div>
+								<div class="sales">
+									<div class="sales__titles sale-title">
+										<div class="sale-title__title">Номер заказа</div>
+										<div class="sale-title__title">Программа</div>
+										<div class="sale-title__title">Действует до</div>
+										<div class="sale-title__title">Скачать</div>
+										<div class="sale-title__title">Руководство</div>
+										<div class="sale-title__title">Статус</div>
+									</div>
+									<div class="sales__order order order__red">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file1"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file1" id="inp-file1">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+										<div class="order__tippy" data-tippy-content="Продлите заказ"></div>
+									</div>
+									<div class="sales__order order">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file2"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file2" id="inp-file2">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									</div>
+									<div class="sales__order order">
+										<div class="order__num">112192</div>
+										<div class="order__desc">(2) Детский сад: Питание</div>
+										<div class="order__date">08.09.2022</div>
+										<div class="order__down">
+											<label for="inp-file3"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+											<input type="file" name="inp-file3" id="inp-file3">
+										</div>
+										<div class="order__guide">
+											<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+										</div>
+										<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									</div>
+								</div>
+								<div class="activation">
+									<div class="activation__box">
+										<h3 class="activation__heading">Доступно к активации: <span>2</span></h3>
+										<p class="activation__desc">Запросите код и активируйте программу</p>
+										<button data-popup=".popup" type="button" class="activation__button">Запросить код</button>
+									</div>
+									<div class="activation__intelligence intelligence">
+										<div class="intelligence__desc">
+											<p class="intelligence__date">Дата активации: <span>2022-09-15 13:54:59</span> </p>
+											<p class="intelligence__name">Наименование компьютера: <span>HOME-PCi</span>
+												<img data-tippy-content="Роман<br>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz<br>Майкрософт Windows 8.1 Профессиональная" src="@img/main/i.svg" alt="Подсказка">
+											</p>
+											<p class="intelligence__comment">Комментарий: <span>Хочу перенести программу</span></p>
+										</div>
+										<div class="intelligence__active">
+											<button type="button" class="intelligence__submit">Деактивировать</button>
+										</div>
+									</div>
+									<div class="activation__intelligence intelligence">
+										<div class="intelligence__desc">
+											<p class="intelligence__date">Дата активации: <span>2022-09-15 13:54:59</span> </p>
+											<p class="intelligence__name">Наименование компьютера: <span>HOME-PCi</span>
+												<img data-tippy-content="Роман<br>Pentium (R) Dual-Core CPU T440 @ 2.20 GHz<br>Майкрософт Windows 8.1 Профессиональная" src="@img/main/i.svg" alt="Подсказка">
+											</p>
+											<p class="intelligence__comment">Комментарий: <span>Хочу перенести программу</span></p>
+										</div>
+										<div class="intelligence__active">
+											<button type="button" class="intelligence__submit">Деактивировать</button>
+										</div>
+									</div>
+								</div>
+								<div class="sales__order order">
+									<div class="order__num">112192</div>
+									<div class="order__desc">(2) Детский сад: Питание</div>
+									<div class="order__date">08.09.2022</div>
+									<div class="order__down">
+										<label for="inp-file4"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+										<input type="file" name="inp-file4" id="inp-file4">
+									</div>
+									<div class="order__guide">
+										<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+									</div>
+									<div class="order__status">Не активировано (1)</div>
+								</div>
+								<div class="sales__order order order__red">
+									<div class="order__num">112192</div>
+									<div class="order__desc">(2) Детский сад: Питание</div>
+									<div class="order__date">08.09.2022</div>
+									<div class="order__down">
+										<label for="inp-file5"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+										<input type="file" name="inp-file5" id="inp-file5">
+									</div>
+									<div class="order__guide">
+										<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+									</div>
+									<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									<div class="order__tippy" data-tippy-content="Продлите заказ"></div>
+								</div>
+								<div class="sales__order order">
+									<div class="order__num">112192</div>
+									<div class="order__desc">(2) Детский сад: Питание</div>
+									<div class="order__date">08.09.2022</div>
+									<div class="order__down">
+										<label for="inp-file6"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+										<input type="file" name="inp-file6" id="inp-file6">
+									</div>
+									<div class="order__guide">
+										<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+									</div>
+									<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+								</div>
+								<div data-showmore class="order-more">
+									<div data-showmore-content="1" class="order-more__content">
+										<div class="sales__order order">
+											<div class="order__num">112192</div>
+											<div class="order__desc">(2) Детский сад: Питание</div>
+											<div class="order__date">08.09.2022</div>
+											<div class="order__down">
+												<label for="inp-file7"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+												<input type="file" name="inp-file7" id="inp-file7">
+											</div>
+											<div class="order__guide">
+												<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+											</div>
+											<div class="order__status">Не активировано (1)</div>
+										</div>
+										<div class="sales__order order order__red">
+											<div class="order__num">112192</div>
+											<div class="order__desc">(2) Детский сад: Питание</div>
+											<div class="order__date">08.09.2022</div>
+											<div class="order__down">
+												<label for="inp-file8"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+												<input type="file" name="inp-file8" id="inp-file8">
+											</div>
+											<div class="order__guide">
+												<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+											</div>
+											<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+											<div class="order__tippy" data-tippy-content="Продлите заказ"></div>
+										</div>
+										<div class="sales__order order">
+											<div class="order__num">112192</div>
+											<div class="order__desc">(2) Детский сад: Питание</div>
+											<div class="order__date">08.09.2022</div>
+											<div class="order__down">
+												<label for="inp-file9"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+												<input type="file" name="inp-file9" id="inp-file9">
+											</div>
+											<div class="order__guide">
+												<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+											</div>
+											<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+										</div>
+									</div>
+									<button hidden data-showmore-button type="button" class="order-more__more"><span>Показать еще</span><span>Скыть</span></button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<h2 class="title">Учебный центр</h2>
+								<div class="inp-text">
+									<input type="text" name="inp-text" class="" autocomplete="off" placeholder="Введите название"></div>
+							</div>
+							<div class="tabs__body">
+								<h2 class="title">Запрос токена</h2>
+								<div class="activation__box">
+									<h3 class="activation__heading">Доступно к активации: <span>2</span></h3>
+									<p class="activation__desc">Запросите код и активируйте программу</p>
+									<button data-popup=".popup" type="button" class="activation__button">Запросить код</button>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<h2 class="title">Техподдержка</h2>
+								<div class="sales__order order order__red">
+									<div class="order__num">112192</div>
+									<div class="order__desc">(2) Детский сад: Питание</div>
+									<div class="order__date">08.09.2022</div>
+									<div class="order__down">
+										<label for="inp-file11"><img src="@img/main/arrow-dpwn.svg" alt="Загрузить" title="Загрузить"></label>
+										<input type="file" name="inp-file11" id="inp-file11">
+									</div>
+									<div class="order__guide">
+										<a href="img/main/politica.jpg" target="_blank" class="order__link"><img src="@img/main/file.svg" alt="Политика" title="Политика"></a>
+									</div>
+									<div class="order__status"><p>Активировано (1)</p> Не активировано (1)</div>
+									<div class="order__tippy" data-tippy-content="Продлите заказ"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
+	</body>
+</html>
